@@ -4,56 +4,59 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="fullpage.min.css">
+<!--    <link rel="stylesheet" href="fullpage.min.css">-->
 </head>
 <body>
     <div class="wrapper d-flex">
         <div class="block">
-            <div class="align-center-absolute">
+            <div class="bubble size-29"></div>
+            <div class="bubble size-36"></div>
+            <div class="bubble size-45"></div>
+            <div class="bubble size-58"></div>
+            <div class="bubble size-80"></div>
+            <div class="bubble size-131"></div>
+            <div class="bubble size-179"></div>
+            <div class="bubble size-690"></div>
+            <div class="align-center-absolute phone-wrapper">
                 <img src="assets/icon/Frame_mobile.svg"/>
                 <div id="block-scroll">
                     <div class="section" id="section0">
-                        <h1>Section 1</h1>
                     </div>
                     <div class="section" id="section1">
-                        <h1>Section 2</h1>
                     </div>
                     <div class="section" id="section2">
-                        <h1>Section 3</h1>
                     </div>
                     <div class="section" id="section3">
-                        <h1>Section 4</h1>
                     </div>
                 </div>
-
             </div>
         </div>
-        <div class="block d-flex flex-dir-col">
+        <div class="block d-flex justify-content-center flex-dir-col">
             <div  class="d-flex flex-dir-col gap-16">
-                <a href="#firstPage" id="button0" onclick="clickButton(0)" class="d-flex align-items-center gap-16 round-end-button-shape">
+                <div id="button0" onclick="clickButton(0)" class="d-flex align-items-center gap-16 round-end-button-shape">
                     <div class="icon-wrapper">
-                        <img class="align-center-absolute" src="assets/icon/phone.svg"/>
+                        <img id="img0" class="align-center-absolute" src="assets/icon/phone_active.svg"/>
                     </div>
                     Audio & video calls
-                </a>
-                <a href="#secondPage" id="button1" onclick="clickButton(1)" class="d-flex align-items-center gap-16 round-end-button-shape">
+                </div>
+                <div id="button1" onclick="clickButton(1)" class="d-flex align-items-center gap-16 round-end-button-shape">
                     <div class="icon-wrapper">
-                        <img class="align-center-absolute" src="assets/icon/message.svg"/>
+                        <img id="img1" class="align-center-absolute" src="assets/icon/message.svg"/>
                     </div>
                     Direct messaging
-                </a>
-                <a href="#thirdPage" id="button2" onclick="clickButton(2)" class="d-flex align-items-center gap-16 round-end-button-shape">
+                </div>
+                <div id="button2" onclick="clickButton(2)" class="d-flex align-items-center gap-16 round-end-button-shape">
                     <div class="icon-wrapper">
-                        <img class="align-center-absolute" src="assets/icon/customise.svg"/>
+                        <img id="img2" class="align-center-absolute" src="assets/icon/customise.svg"/>
                     </div>
                     Customised design for your brand
-                </a>
-                <a href="#fourthPage" id="button3" onclick="clickButton(3)" class="d-flex align-items-center gap-16 round-end-button-shape">
+                </div>
+                <div id="button3" onclick="clickButton(3)" class="d-flex align-items-center gap-16 round-end-button-shape">
                     <div class="icon-wrapper">
-                        <img class="align-center-absolute" src="assets/icon/document.svg"/>
+                        <img id="img3" class="align-center-absolute" src="assets/icon/document.svg"/>
                     </div>
                     Third slide
-                </a>
+                </div>
             </div>
         </div>
     </div>
@@ -63,20 +66,20 @@
 <!--    <li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>-->
 <!--</ul>-->
 
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-<script src="fullpage.extensions.min.js"></script>
-<script type="text/javascript">
-    var myFullpage = new fullpage('#block-scroll', {
-        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke'],
-        anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
-        menu: '#menu',
-        slidesNavigation: true,
-        lazyLoad: true,
-        credits: {enabled: false}
-    });
-</script>
+<!--<script src="http://code.jquery.com/jquery-latest.min.js"></script>-->
+<!--<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>-->
+<!--<script src="fullpage.extensions.min.js"></script>-->
+<!--<script type="text/javascript">-->
+<!--    var myFullpage = new fullpage('#block-scroll', {-->
+<!--        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke'],-->
+<!--        anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],-->
+<!--        menu: '#menu',-->
+<!--        slidesNavigation: true,-->
+<!--        lazyLoad: true,-->
+<!--        credits: {enabled: false}-->
+<!--    });-->
+<!--</script>-->
 <script src="index.js"></script>
 </body>
 </html>
