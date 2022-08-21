@@ -141,10 +141,9 @@ a {
 }
 
 .phone-wrapper {
+    z-index: 2;
     overflow: hidden;
     border-radius: 20px;
-    /*border: solid 10px green;*/
-    background-image: linear-gradient(rgba(0, 167, 157, 1), rgba(75, 225, 222, 1), rgba(255, 255, 255, 0.28));
     -ms-transform: rotate(9deg); /* IE 9 */
     transform: translate(-50%, -50%) rotate(9deg);
 }
@@ -268,4 +267,32 @@ a {
     top: 74%;
     left: 69%;
     transform: translate(-50%, -50%);
+}
+
+.box-shadow--blue {
+    box-shadow: 0px 6px 16px rgba(46, 98, 202, 0.4);
+}
+
+.box-shadow--yellow {
+    box-shadow: 0px 6px 16px rgba(225, 146, 28, 0.4);
+}
+
+.box-shadow--green {
+    box-shadow: 0px 6px 16px rgba(0, 167, 157, 0.4);
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+.floating {
+    animation: float 6s ease-in-out infinite;
 }
